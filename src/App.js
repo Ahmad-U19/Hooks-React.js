@@ -1,11 +1,13 @@
 //import logo from './logo.svg';
 import './App.css';
-import HookCounter from './Components/HookCounter';
+import HookCountertwo from './Components/HookCountertwo';
+//import HookCounter from './Components/HookCounter';
 
 function App() {
   return (
     <div className="App">
-      <HookCounter />
+      {/* <HookCounter /> */}
+      <HookCountertwo />
     </div>
   );
 }
