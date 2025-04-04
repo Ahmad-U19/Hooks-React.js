@@ -8,6 +8,7 @@ function HookCountertwo() {
         for(let i=0; i<5; i++){
             setCount(prevCount => prevCount +1)
         }
+        
     }
   return (
     <div>
