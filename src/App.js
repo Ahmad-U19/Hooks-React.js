@@ -1,10 +1,14 @@
 import './App.css';
-import DataFetching from './Components/DataFetching';
+import React from 'react';
+import Context from './Components/Context';
+//import DataFetching from './Components/DataFetching';
 //import IntervalHook from './Components/IntervalHook';
 //mport MouseContainer from './Components/MouseContainer';
 //import HookCountertwo from './Components/HookCountertwo';
 //import HooksEffectCounter from './Components/HooksEffectCounter';
 //import MouseHooks from './Components/MouseHooks';
+
+export const UserContext = React.createContext()
 
 function App() {
   return (
@@ -13,7 +17,10 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <MouseHooks /> */}
       {/* <IntervalHook /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={'Ahmad'}>
+        <Context />
+      </UserContext.Provider>
     </div>
   );
 }
